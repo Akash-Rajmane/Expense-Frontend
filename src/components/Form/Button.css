@@ -1,0 +1,88 @@
+.customBtn {
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 5px 0px;
+  }
+  
+  .customBtn:disabled {
+   cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+   
+  /* sizes */
+
+  .normal {
+    padding: 6px 12px;
+    font: 14px;
+  }
+  
+  .large {
+    font-size: 16px;
+    padding: 6px 18px;
+  }
+  
+      
+/* colors */
+.greenyellow:active{
+background-color: #4bc00c;
+color:#eee;
+cursor: pointer;
+}
+
+.greenyellow:hover {
+background-color: #4bc00c;
+color:#eee;
+cursor: pointer;
+}
+
+.greenyellow{
+background-color: transparent;
+color: #4bc00c;
+border: 2px solid #4bc00c;
+transition: all 0.35s ease-in-out;
+}
+
+.green:hover {
+background-color: #008000;
+color:#eee;
+cursor: pointer;
+}
+
+.green {
+background-color: transparent;
+color: #008000;
+border: 2px solid #008000;
+transition: all 0.35s ease-in-out;
+}
+
+.red:hover {
+background-color:  #da2323;
+color:#eee;
+cursor: pointer;
+}
+
+.red {
+background-color: transparent;
+color:  #da2323;
+border: 2px solid  #da2323;
+transition: all 0.35s ease-in-out;
+}
+
+.blue:hover {
+background-color:  #208dd2;
+color:#eee;
+cursor: pointer;
+}
+
+.blue {
+background-color: transparent;
+color:  #208dd2;
+border: 2px solid  #208dd2;
+transition: all 0.35s ease-in-out;
+}
+
+      
+  

@@ -1,0 +1,32 @@
+.reportBox{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.premiumFeatures{
+    margin-top: 40px;
+}
+
+.intervalReport{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloadedFiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.reportBox p{
+    font-size: 24px;
+    font-weight: 700;
+}

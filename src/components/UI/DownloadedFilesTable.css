@@ -1,0 +1,40 @@
+.filesTable{
+    border-collapse: collapse;
+    margin: 10px 0px;
+    overflow-x: scroll;
+}
+
+.filesTable th, .filesTable td {
+    border: 1px solid #ddd;
+    padding: 8px
+}
+  
+.filesTable th {
+    background-color: #72c1f3;
+    text-align: left;
+}
+  
+.filesTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+.filesTable tbody tr:hover {
+    background-color: #d8f3fe;
+}
+
+.fileCell{
+    max-width: 100px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.urlCell {
+    max-width: 120px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+

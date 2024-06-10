@@ -1,0 +1,27 @@
+.noDataFound{
+  font-size: 18px;
+}
+
+.expenseTable{
+    border-collapse: collapse;
+    margin: 10px 0px;
+    overflow-x: scroll;
+}
+
+.expenseTable th, .expenseTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .expenseTable th {
+    background-color: #72c1f3;
+    text-align: left;
+  }
+  
+  .expenseTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .expenseTable tbody tr:hover {
+    background-color: #d8f3fe;
+  }

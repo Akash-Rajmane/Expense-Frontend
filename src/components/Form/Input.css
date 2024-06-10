@@ -1,0 +1,27 @@
+.inputComponent {
+    margin: 0;
+    padding: 0;
+    width: max-content;
+}
+
+input {
+    margin: 8px 0px;
+    border-radius: 4px;
+    border: 2px solid #d3d3d3;
+    outline: none;
+    height: 25px;
+    width: 250px;
+    font: inherit;
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+  input:focus {
+    border: 2px solid  #208dd2;
+  }
+  
+  input:disabled {
+    background: #c6c6c6;
+    cursor: not-allowed;
+  }
+  

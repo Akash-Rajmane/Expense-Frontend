@@ -1,0 +1,41 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px; 
+    padding: 20px;
+    border: 2px solid #208dd2;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.formTitle{
+    font-size: 24px;
+    color: #208dd2;
+    margin: 5px 0px 5px 0px;
+}
+
+.formText{
+    font-size: 12px;
+    margin: 4px 0px 0px 0px;
+}
+
+.link{
+    color: #208dd2;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
