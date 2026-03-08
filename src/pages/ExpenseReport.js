@@ -26,7 +26,7 @@ const ExpenseReport = () => {
   const [isLoadingFiles, setIsLoadingFiles] = useState(false);
   const { token, isPremiumUser } = useContext(AuthContext);
   const [perPage, setPerPage] = useState(
-    localStorage.getItem("limit") ? Number(localStorage.getItem("limit")) : 5
+    localStorage.getItem("limit") ? Number(localStorage.getItem("limit")) : 5,
   );
 
   const perPageChangeHandler = (e) => {
@@ -42,7 +42,7 @@ const ExpenseReport = () => {
         headers: {
           Authorization: `Bearer ${token}`,
         },
-      }
+      },
     );
 
     const data = await response.json();
@@ -65,7 +65,7 @@ const ExpenseReport = () => {
         headers: {
           Authorization: `Bearer ${token}`,
         },
-      }
+      },
     );
 
     const data = await response.json();
@@ -82,12 +82,12 @@ const ExpenseReport = () => {
   const fetchAllExpenses = async () => {
     setIsLoadingAllExpenses(true);
     const response = await fetch(
-      `${process.env.REACT_APP_BE_HOST}/get-expenses/?page=${currPage}&limit=${perPage}`,
+      `${process.env.REACT_APP_BE_HOST}/get-expenses?page=${currPage}&limit=${perPage}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
         },
-      }
+      },
     );
     const data = await response.json();
     //console.log(data);
@@ -144,7 +144,7 @@ const ExpenseReport = () => {
         headers: {
           Authorization: `Bearer ${token}`,
         },
-      }
+      },
     );
     const data = await response.json();
 
