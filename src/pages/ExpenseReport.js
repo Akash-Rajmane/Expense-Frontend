@@ -6,7 +6,6 @@ import Button from "../components/Form/Button";
 import { AuthContext } from "../context/AuthContext";
 import DowloadedFilesTable from "../components/UI/DowloadedFilesTable";
 import Pagination from "../components/UI/Pagination";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { Oval } from "react-loader-spinner";
 import useThrottle from "../hooks/useThrottle";
 

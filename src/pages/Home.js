@@ -4,7 +4,6 @@ import "./Home.css";
 import List from "../components/UI/List";
 import { AuthContext } from "./../context/AuthContext";
 import Pagination from "../components/UI/Pagination";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { Oval } from "react-loader-spinner";
 
 const Home = () => {

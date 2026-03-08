@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./Leaderboard.css";
 import { AuthContext } from "../context/AuthContext";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { Oval } from "react-loader-spinner";
 
 const Leaderboard = () => {
