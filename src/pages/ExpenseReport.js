@@ -181,13 +181,12 @@ const ExpenseReport = () => {
           perPageChangeHandler={perPageChangeHandler}
         />
       )}
-      {allExpenses.length > 0 && (
+      {allExpenses.length > 0 && isPremiumUser && (
         <Button
           label={"Download Report ↓"}
           onClick={throttledDownloadHandler}
           size="large"
           type="button"
-          disabled={!isPremiumUser}
           style={{ marginTop: "20px" }}
         />
       )}
