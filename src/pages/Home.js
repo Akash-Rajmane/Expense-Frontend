@@ -5,7 +5,7 @@ import List from "../components/UI/List";
 import { AuthContext } from "./../context/AuthContext";
 import Pagination from "../components/UI/Pagination";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import Loader from "react-loader-spinner";
+import { Oval } from "react-loader-spinner";
 
 const Home = () => {
   const { token } = useContext(AuthContext);
@@ -76,7 +76,7 @@ const Home = () => {
         perPage={perPage}
       />
       {isLoadingExpenses ? (
-        <Loader type="Audio" color="#208dd2" height={40} width={40} />
+        <Oval color="#208dd2" height={40} width={40} />
       ) : (
         <List
           expenses={expenses}

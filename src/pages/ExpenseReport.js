@@ -7,7 +7,7 @@ import { AuthContext } from "../context/AuthContext";
 import DowloadedFilesTable from "../components/UI/DowloadedFilesTable";
 import Pagination from "../components/UI/Pagination";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import Loader from "react-loader-spinner";
+import { Oval } from "react-loader-spinner";
 import useThrottle from "../hooks/useThrottle";
 
 const ExpenseReport = () => {
@@ -164,7 +164,7 @@ const ExpenseReport = () => {
     <div className="reportBox">
       <p>Full Expense Report</p>
       {isLoadingAllExpenses ? (
-        <Loader type="Audio" color="#208dd2" height={40} width={40} />
+        <Oval type="Audio" color="#208dd2" height={40} width={40} />
       ) : (
         <ExpenseTable data={allExpenses} />
       )}
@@ -193,8 +193,7 @@ const ExpenseReport = () => {
       {isPremiumUser && (
         <div className="premiumFeatures">
           {isLoadingInterval ? (
-            <Loader
-              type="Audio"
+            <Oval
               color="#208dd2"
               height={40}
               width={40}
@@ -221,7 +220,7 @@ const ExpenseReport = () => {
           {/* <div className="downloadedFiles">
             <p>Previously Downloaded Files</p>
             {isLoadingFiles ? (
-              <Loader type="Audio" color="#208dd2" height={40} width={40} />
+              <Oval type="Audio" color="#208dd2" height={40} width={40} />
             ) : (
               <DowloadedFilesTable data={urls} />
             )}
